@@ -1,0 +1,49 @@
+@use '/src/host/styles/theme';
+
+.controller {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px;
+
+  .operation {
+    display: flex;
+    gap: 10px;
+  }
+
+  .execution {
+    display: flex;
+    gap: 10px;
+  }
+
+  button {
+    text-transform: capitalize;
+
+    &:disabled {
+      opacity: 0.5;
+    }
+  }
+
+  .speed {
+    display: none;
+  }
+}
+
+@media (width >= 768px) {
+  .controller .speed {
+    display: block;
+  }
+}
+
+[data-theme='dark'] {
+  .execution {
+    img {
+      filter: invert(1);
+    }
+  }
+
+  select {
+    background-color: theme.$dark;
+    color: theme.$light;
+  }
+}
