@@ -15,6 +15,7 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "homepage": "https://AdnanAShaikh.github.io/algo-visual/",
     "test": "vitest",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
